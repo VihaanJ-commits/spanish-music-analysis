@@ -120,7 +120,7 @@ PLOTLY_THEME = dict(
 # ─────────────────────────────────────────────
 @st.cache_data
 def load_and_process():
-    df = pd.read_csv("Atlantic_Spain.csv")
+    df = pd.read_csv("spanish_music_analysis/Atlantic_Spain.csv")
 
     # Fix date format DD-MM-YYYY
     df["date"] = pd.to_datetime(df["date"], format="%d-%m-%Y", errors="coerce")
